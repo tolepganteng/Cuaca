@@ -113,7 +113,7 @@ public class CuacaAdapter extends RecyclerView.Adapter<CuacaViewHolder> {
         String tanggalWaktuwib = formatWib(lm.getDt_txt());
 
         holder.namaTextView.setText(wm.getMain());
-        holder.deskrisiTextView.setText(wm.getDescription());
+        holder.deskripsiTextView.setText(wm.getDescription());
         holder.tglWaktuTextView.setText(tanggalWaktuwib);
         holder.suhuTextView.setText(suhu);
     }

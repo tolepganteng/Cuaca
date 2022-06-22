@@ -8,14 +8,14 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public class CuacaViewHolder extends RecyclerView.ViewHolder {
     public ImageView cuacaImageView;
-    public TextView namaTextView, deskrisiTextView, tglWaktuTextView, suhuTextView;
+    public TextView namaTextView, deskripsiTextView, tglWaktuTextView, suhuTextView;
 
     public CuacaViewHolder (View itemView) {
         super(itemView);
 
         cuacaImageView = (ImageView)itemView.findViewById(R.id.cuacaImageView);
         namaTextView = (TextView)itemView.findViewById(R.id.namaTextView);
-        deskrisiTextView = (TextView)itemView.findViewById(R.id.deskripsiTextView);
+        deskripsiTextView = (TextView)itemView.findViewById(R.id.deskripsiTextView);
         tglWaktuTextView = (TextView)itemView.findViewById(R.id.tglWaktuTextView);
         suhuTextView = (TextView)itemView.findViewById(R.id.suhuTextView);
     }
