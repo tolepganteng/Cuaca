@@ -4,9 +4,6 @@ public class MainModel {
     private double temp_min;
     private double temp_max;
 
-    public MainModel () {
-    }
-
     public double getTemp_min() {
         return temp_min;
     }
@@ -21,5 +18,9 @@ public class MainModel {
 
     public void setTemp_max(double temp_max) {
         this.temp_max = temp_max;
+    }
+
+    public MainModel() {
+
     }
 }

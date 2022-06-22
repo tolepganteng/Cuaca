@@ -9,12 +9,17 @@ public class RootModel
     @SerializedName("list")
     private List<ListModel> listModelList;
 
-    public RootModel (){
+    public List<ListModel> getListModelList()
+    {
+        return listModelList;
     }
 
-    public List<ListModel> getListModelList() { return listModelList; }
-
-    public void setListModelList(List<ListModel> listModelList) {
+    public void setListModelList(List<ListModel> listModelList)
+    {
         this.listModelList = listModelList;
+    }
+
+    public RootModel() {
+
     }
 }

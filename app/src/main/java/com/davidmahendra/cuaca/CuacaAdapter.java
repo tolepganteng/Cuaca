@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.lang.invoke.MethodHandles;
+
 import java.text.DecimalFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -49,6 +49,8 @@ public class CuacaAdapter extends RecyclerView.Adapter<CuacaViewHolder> {
 
         String suhu = formatNumber(toCelcius(mm.getTemp_min()), "###.##") + "°C - " +
                 formatNumber(toCelcius(mm.getTemp_max()), "###.##") + "C";
+
+        Log.d("*88*", wm.getIcon());
 
         switch (wm.getIcon()) {
             case "01d":
@@ -100,7 +102,7 @@ public class CuacaAdapter extends RecyclerView.Adapter<CuacaViewHolder> {
                 break;
 
             case "11d":
-                holder.cuacaImageView.setImageResource(R.mipmap.ic_11n_foreground);
+                holder.cuacaImageView.setImageResource(R.mipmap.ic_11d_foreground);
                 break;
 
             case "11n":

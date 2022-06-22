@@ -5,6 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardUseCompatPadding="true"
     app:cardCornerRadius="5dp"
+    app:cardBackgroundColor="#EDECEF"
     android:elevation="3dp"
     app:contentPadding="10dp">
     <LinearLayout
@@ -12,8 +13,9 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <ImageView
-            android:layout_width="48dp"
+            android:layout_width="50dp"
             android:layout_height="50dp"
+            android:src="@mipmap/ic_01d"
             android:layout_marginRight="10dp"
             android:id="@+id/cuacaImageView"/>
         <LinearLayout
@@ -33,7 +35,7 @@
                 android:text="(Deskripsi)"
                 android:id="@+id/deskripsiTextView"/>
         </LinearLayout>
-            <LinearLayout
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -47,6 +49,6 @@
                 android:layout_height="wrap_content"
                 android:text="(Suhu)"
                 android:id="@+id/suhuTextView"/>
-            </LinearLayout>
+        </LinearLayout>
     </LinearLayout>
 </androidx.cardview.widget.CardView>

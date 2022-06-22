@@ -35,4 +35,8 @@ public class ListModel
     public void setDt_txt(String dt_txt) {
         this.dt_txt = dt_txt;
     }
+
+    public ListModel() {
+
+    }
 }
